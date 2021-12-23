@@ -1,0 +1,9 @@
+CREATE TABLE `database`.`user1` (
+  `id` INT NOT NULL,
+  `first_name` VARCHAR(45) NOT NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `first_name_UNIQUE` (`first_name` ASC) VISIBLE,
+  UNIQUE INDEX `last_name_UNIQUE` (`last_name` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
